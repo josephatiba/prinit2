@@ -1,0 +1,13 @@
+<template name="nav">
+  <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <a class="navbar-brand brand" href="{{pathFor 'home'}}">Prinit</a>
+      <ul class="nav navbar-nav">
+        <li><a href="{{pathFor 'posts'}}">Explore</a></li>
+      </ul>
+      <ul class="nav pull-right">
+        <li>{{> loginButtons}}</li>
+      </ul>
+    </nav>
+  </div>
+</template>
