@@ -8,6 +8,10 @@
   background: white;
 }
 
-.modal {
-  z-index: 99999;
+#inputAmount {
+  display: inline-block;
+}
+
+.input-group-addon {
+  display: inline-block;
 }
