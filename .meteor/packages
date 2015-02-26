@@ -14,5 +14,6 @@ accounts-password
 accounts-ui
 jquery-masonry
 cfs:standard-packages
-cfs:filesystem
 iron:router
+cfs:filesystem
+yogiben:autoform-file
