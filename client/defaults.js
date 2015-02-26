@@ -1,1 +1,1 @@
-Session.setDefault('adding-post', false);
+Session.setDefault('isChecked', true);

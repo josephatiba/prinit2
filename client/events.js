@@ -1,6 +1,5 @@
-Template.nav.events({
-  'click .addPost': function(evt,tmpl){
-    evt.preventDefault();
-    Session.set('adding_post', true);
+Template.postform.events({
+  'change .checkbox input': function(event){
+    Session.set('isChecked', event.target.checked); 
   }
 });

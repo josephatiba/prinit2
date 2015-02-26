@@ -1,0 +1,45 @@
+<template name="postform">
+          <form>
+          <div class="form-group">
+            <label for="image">File input</label>
+            <input type="file" id="image" accept=".jpg, .jpeg, .png, .tif">
+            <p class="help-block">Acceptable File Formats: .jpg, .jpeg, .png, .tif</p>
+            <p class="help-block">Maximum File Size: 25 MB</p>
+            <p class="help-block">Maximum Image Size (W x H): No Limit</p>
+          </div>
+
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Enter title">
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="Enter description">
+          </div>
+
+          <div>
+            <label class="checkbox">
+              <input type="checkbox" checked="{{isChecked}}"> public
+            </label>
+          </div>
+
+          {{#if isChecked}}
+
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input type="text" class="form-control" id="exampleInputAmount" placeholder="">
+              <div class="input-group-addon">.00</div>
+            </div>
+            <p class="help-block">This is the amount that you'll sell this image for</p>
+          </div>
+          
+          {{/if}}
+         
+          
+
+           <button type="button" class="btn btn-primary">Save changes</button>
+      </form>
+</template>

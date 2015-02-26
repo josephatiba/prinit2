@@ -9,4 +9,7 @@ Router.map(function() {
   this.route('posts', {
     path:'/posts'
   });
+  this.route('postform', {
+    path:'/postform'
+  });
 });
