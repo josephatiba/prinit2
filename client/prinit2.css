@@ -1,1 +1,17 @@
 /* CSS declarations go here */
+
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+
+#inputAmount {
+  display: inline-block;
+}
+
+.input-group-addon {
+  display: inline-block;
+}
