@@ -12,4 +12,4 @@ Router.map(function() {
   this.route('postform', {
     path:'/postform'
   });
-});
+}); 
