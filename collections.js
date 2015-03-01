@@ -1,5 +1,5 @@
 Images = new FS.Collection("images", {
-    stores: [new FS.Store.FileSystem("images")]
+    stores: [new FS.Store.FileSystem("images", {})]
 });
 
 Likes = new Meteor.Collection("likes");
@@ -36,6 +36,7 @@ Schemas.Posts = new SimpleSchema({
   description: {
     type: String,
     label: "Description",
+    optional: true,
     max: 200
   },
   picture: {
