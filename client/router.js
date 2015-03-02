@@ -7,7 +7,9 @@ Router.map(function() {
     path:'/'
   });
   this.route('posts', {
-    path:'/posts'
+    path:'/posts',
+    template: 'posts',
+    data: function() { return Images.findOne(this.params.picture); }
   });
   this.route('postform', {
     path:'/postform'
