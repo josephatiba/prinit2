@@ -1,6 +1,12 @@
-Images = new FS.Collection("images", {
-    stores: [new FS.Store.FileSystem("images", {})]
+var imageStore = new FS.Store.FileSystem("images", {
+  path: "~/wdi/meteor/prinit2/prinit2/public/cfs/files/images" //optional, default is "/cfs/files" path within app container
 });
+
+Images = new FS.Collection("images", {
+  stores: [imageStore]
+});
+
+
 
 Likes = new Meteor.Collection("likes");
 
@@ -39,13 +45,13 @@ Schemas.Posts = new SimpleSchema({
     optional: true,
     max: 200
   },
-  picture: {
+  pictureURL: {
       type: String,
       label: 'Choose file',
       autoform: {
         afFieldInput: {
           type: "fileUpload",
-          collection: "Images"
+          collection: "images"
         }
       }
     }

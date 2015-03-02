@@ -6,7 +6,8 @@ Template.postform.events({
     var title = tmpl.find('.title').value;
     var description = tmpl.find('.description').value;
     var picture = tmpl.find('.picture').value;
+    var pictureURL = "cfs/files/images/images-" + picture + "-IMG_2093.jpg";
     console.log(picture);
-    Posts.insert({description:description, title:title, picture:picture, createdAt: new Date()});
+    Posts.insert({description:description, title:title, pictureURL:pictureURL, createdAt: new Date()});
   }
 });
