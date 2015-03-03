@@ -45,13 +45,13 @@ Schemas.Posts = new SimpleSchema({
     optional: true,
     max: 200
   },
-  pictureURL: {
+  picture: {
       type: String,
       label: 'Choose file',
       autoform: {
         afFieldInput: {
           type: "fileUpload",
-          collection: "images"
+          collection: "Images"
         }
       }
     }

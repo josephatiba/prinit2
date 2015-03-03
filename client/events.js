@@ -8,6 +8,8 @@ Template.postform.events({
     var picture = tmpl.find('.picture').value;
     var pictureURL = "cfs/files/images/images-" + picture + "-IMG_2093.jpg";
     console.log(picture);
-    Posts.insert({description:description, title:title, pictureURL:pictureURL, createdAt: new Date()});
+    Posts.insert({description:description, title:title, picture:picture, createdAt: new Date()});
+    var test = Images.find( { _id: picture } );
+    console.log(test);
   }
 });
